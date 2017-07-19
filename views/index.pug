@@ -1,5 +1,9 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div router 列表
+      ul
+          li
+            a(href='/users') 用户列表
+          li
+            a(href='/users/insert') 增加用户

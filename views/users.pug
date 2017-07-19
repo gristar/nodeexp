@@ -1,9 +1,6 @@
 extends layout
 
 block content
-    form(method='post',action='insert/add')
-        span username:
-        input(name='username')
-        span password:
-        input(name='password',type='password')
-        button(type='submit') 提交
+    ul
+        each user in list
+            li #{user.username}

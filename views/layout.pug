@@ -4,4 +4,9 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    block nav
+      h1= title
+      p
+      a(href='/') 主页
+      p 欢迎 #{title}
     block content
